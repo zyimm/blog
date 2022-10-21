@@ -55,7 +55,7 @@ pass insert docker-credential-helpers/docker-pass-initialized-check # 输入新�
 }
 ```
 
-再次dockerlogin 登陆应该不会出现授权错误
+再次 docker login应该不会出现授权错误
 
 ## 参考链接：
 
