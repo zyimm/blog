@@ -2,7 +2,7 @@
 title: Linux Command 本地镜像
 ---
 
-方便工作学习中查找linux方便的命令(因为自己搞容易记得 😂 )，特地基于Linux Command建立这个镜像站点！
+方便工作学习中查找linux的命令(因为自己搞容易记得 😂 )，特地基于Linux Command建立这个镜像站点！
 
 地址❤️：[Linux Command建立这个镜像站点！http://linux.zyimm.com](http://linux.zyimm.com/)
 
