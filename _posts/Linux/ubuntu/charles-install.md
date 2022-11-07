@@ -1,6 +1,6 @@
 ---
 title: Ubuntu 22.04.1下安装Charles抓包
-date: 2022-10-05
+date: 2022-11-05
 tags: Charles
 ---
 
@@ -54,7 +54,7 @@ Categories=Utility;
 
 其他配置说明自行百度～
 
-`sudo chmod u+x charles.desktop` 最后赋予执行权限，接下来在启动页面搜索`Charles` 可以启动对应程序
+`sudo chmod u+x charles.desktop` 最后赋予执行权限，接下来在启动页面搜索`Charles` 可以启动对应程序！
 
 
 
