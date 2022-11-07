@@ -77,3 +77,7 @@ https://zhile.io
 
 
 然后打开Charles，在上方菜单栏的“Help”选择“Register Charles”输入生成账号和注册码即可
+
+
+## 参考
+1. [知乎：Charles安装与激活](https://zhuanlan.zhihu.com/p/537292816)
