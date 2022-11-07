@@ -4,7 +4,7 @@ date: 2022-11-05
 tags: Charles
 ---
 
-[charles 官网](https://www.charlesproxy.com/) 下载Charles，Debian系列发行版可以使用 `apt-get install charles-proxy` 安装不过需要提前安装对应key才可以安装，我这边是直接下载安装包解压安装。
+[charles 官网](https://www.charlesproxy.com/) 下载Charles，Debian系列发行版可以使用 `apt-get install charles-proxy` 安装,不过需要提前安装对应key才可以安装，我这边是直接下载安装包解压安装。
 
 
 ## 解压&安装
