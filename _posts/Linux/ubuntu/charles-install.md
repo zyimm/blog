@@ -1,5 +1,5 @@
 ---
-title: Ubuntu 22.04.1下安装Charles抓包
+title: Ubuntu 22.04.1下安装Charles
 date: 2022-11-05
 tags: Charles
 ---
@@ -58,3 +58,30 @@ Categories=Utility;
 
 
 
+## Charles激活
+
+### 现成激活账号
+
+```
+https://zhile.io
+
+48891cf209c6d32bf4
+
+```
+
+
+### 现成激活账号
+
+```
+Registered Name ： https://zhile.io
+
+License Key：48891cf209c6d32bf4
+
+```
+
+### Charles在线免费工具生成一个新的注册码
+
+[破解网址:www.zzzmode.com](https://www.zzzmode.com/mytools/charles/)
+
+
+然后打开Charles，在上方菜单栏的“Help”选择“Register Charles”输入生成账号和注册码即可
