@@ -4,31 +4,6 @@ date: 2022-12-03 23:10:09
 tags: Docker
 ---
 
-
-- [一、Dockerfile 简介](#一dockerfile-简介)
-  - [使用 Dockerfile 构建镜像](#使用-dockerfile-构建镜像)
-- [二、Dockerfile 指令详解](#二dockerfile-指令详解)
-  - [FROM(指定基础镜像)](#from指定基础镜像)
-  - [RUN(执行命令)](#run执行命令)
-  - [COPY(复制文件)](#copy复制文件)
-  - [ADD(更高级的复制文件)](#add更高级的复制文件)
-  - [CMD(容器启动命令)](#cmd容器启动命令)
-  - [ENTRYPOINT(入口点)](#entrypoint入口点)
-    - [场景一：让镜像变成像命令一样使用](#场景一让镜像变成像命令一样使用)
-    - [场景二：应用运行前的准备工作](#场景二应用运行前的准备工作)
-  - [ENV(设置环境变量)](#env设置环境变量)
-  - [ARG(构建参数)](#arg构建参数)
-  - [VOLUME(定义匿名卷)](#volume定义匿名卷)
-  - [EXPOSE(暴露端口)](#expose暴露端口)
-  - [WORKDIR(指定工作目录)](#workdir指定工作目录)
-  - [LABEL](#label)
-  - [USER(指定当前用户)](#user指定当前用户)
-  - [HEALTHCHECK(健康检查)](#healthcheck健康检查)
-  - [ONBUILD(为他人作嫁衣裳)](#onbuild为他人作嫁衣裳)
-- [参考资料](#参考资料)
-
-<!-- /TOC -->
-
 ## 一、Dockerfile 简介
 
 Docker 镜像的定制实际上就是定制每一层所添加的配置、文件。如果我们可以把每一层修改、安装、构建、操作的命令都写入一个脚本，用这个脚本来构建、定制镜像，那么之前提及的无法重复的问题、镜像构建透明性的问题、体积的问题就都会解决。这个脚本就是 Dockerfile。
