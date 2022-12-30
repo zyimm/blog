@@ -11,10 +11,8 @@ tags: Ubuntu
 > 命令如下：
 ```shell
 # root  账号无需加上sudo
-
 sudo apt-get purge $(dpkg -l|grep ^rc|awk '{ print $2 }')
 sudo apt-get purge $(dpkg -l|grep iF|awk '{ print $2 }')
-
 ```
 
 > 注解：
