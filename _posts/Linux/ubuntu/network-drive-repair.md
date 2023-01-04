@@ -1,10 +1,10 @@
 ---
 title: Ubuntu 22.04.1 修复网卡驱动
-date: 2022-01-03
+date: 2023-01-02
 tags: Ubuntu
 ---
 
-因为笔记的指纹驱动是goodix供应商提供，但是官方没有提供相应的linux下驱动，导致指纹在自己的ubuntu下使用。最近看到(libfprint支持了goodix有关设备)[https://fprint.freedesktop.org/supported-devices.html]，其中包含了我的型号(型号查看`lsusb`)，但是安装之后有线网卡没了，且编译安装过程中关于`libusb`无法解决，最终导致安装失败。
+因为笔记的指纹驱动是goodix供应商提供，但是官方没有提供相应的linux下驱动，导致指纹在自己的ubuntu下使用。最近看到[libfprint支持了goodix有关设备](https://fprint.freedesktop.org/supported-devices.html)，其中包含了我的型号(型号查看`lsusb`)，但是安装之后有线网卡没了，且编译安装过程中关于`libusb`无法解决，最终导致安装失败。
 
 所以本次记录修复有线网卡解决办法，有线网卡故障表示`线缆已拔出`，实际是网卡驱动丢失并不是线路故障！
 
