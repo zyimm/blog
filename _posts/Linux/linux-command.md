@@ -7,10 +7,9 @@ title: Linux Command 本地镜像
 地址❤️：[Linux Command建立这个镜像站点！http://linux.zyimm.com](http://linux.zyimm.com/)
 
 ## docker 安装
-```sh
+```shell
 # 拉取镜像
 docker pull ghcr.io/jaywcjlove/linux-command:latest
-
 # 自定义端口
 docker run --name linux-command --rm -d -p 3100:3000 wcjiang/linux-command:latest
 ```
