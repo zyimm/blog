@@ -40,3 +40,7 @@ docker exec php74 /bin/sh -c "cd satis/ && php bin/satis build satis.json public
 ### 注意
 1. 定时任务不需要开启一个终端，所以命令 `docker exec` 后面无需跟`-t` 分配一个终端
 2. 每个容器交互shell有bash或sh，命令中`/bin/sh` 应是具体容器交互shell决定使用哪个
+
+## 参考
+1. [linux crontab命令 参考](http://linux.zyimm.com/c/crontab.html)
+2. [crontab 使用 ](https://learnku.com/articles/26172)
