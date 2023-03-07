@@ -26,7 +26,7 @@ qemu-system-x86_64 -hda ./win10.img -cdrom win10.iso  -boot d -enable-kvm -machi
 ```
 
 提示：
-下次启动，移除`-cdrom win10.iso` 参数，第一次需要通过镜像安装！
+下次启动，移除`-cdrom win10.iso` 参数，第一次需要通过cdrom镜像安装，等于实际光盘安装系统！
 
 # qemu-system-x86_64 命令相关说明
 
