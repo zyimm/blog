@@ -4,15 +4,13 @@ title: Qemu模拟win10环境
 
 # QEMU
 
-QEMU是一个通用的开源机器仿真器和虚拟机。
-
-当用作机器仿真器时，QEMU可以在不同的机器（例如您自己的PC）上运行针对一台机器（例如ARM板）的操作系统和程序。通过使用动态翻译，它获得了非常好的性能。比如模拟嵌入式开发环境！
+QEMU是一个通用的开源机器仿真器和虚拟机。当用作机器仿真器时，QEMU可以在不同的机器（例如您自己的PC）上运行针对一台机器（例如ARM板）的操作系统和程序。通过使用动态翻译，它获得了非常好的性能。比如模拟嵌入式开发环境！
 
 ubuntu 22.04 桌面版本已经默认安装了，所以无需额外安装。
 
 # win10 镜像
 
-win10 镜像可以在[https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1](https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1) 下载原版win10镜像
+win10镜像可以在[https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1](https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1)该网站下载原版win10镜像。
 
 建立一个虚拟机文件夹，如win10，接着如下操作步骤：
 
