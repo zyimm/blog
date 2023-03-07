@@ -119,7 +119,7 @@ qemu-system-x86_64 -m 1GB -boot cd -hda /server/kvm-1.qcow2 -mem-path /dev/hugep
 
 `-mtdblock file use 'file' as on-board Flash memory image`
 
-## -sd 参数
+## sd 参数
 
 为客户机指定一个SD卡。
 
