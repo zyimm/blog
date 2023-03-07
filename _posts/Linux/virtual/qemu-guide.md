@@ -51,7 +51,7 @@ qemu-system-x86_64 -hda ./win10.img -cdrom win10.iso  -boot d -enable-kvm -machi
 ```sh
 qemu-system-x86_64  -smp 1,sockets=1,cores=2,threads=2 -boot cd -hda /server/kvm-1.qcow2  -enable-kvm​
 ```
-`-enable-kvm​` 基于内核的虚拟机尽心模拟，相对于纯软件模拟性能提升很多！建议开启
+`-enable-kvm​` 基于内核的虚拟机模拟，相对于纯软件模拟性能提升很多！建议开启
 
 
 ## cpu
