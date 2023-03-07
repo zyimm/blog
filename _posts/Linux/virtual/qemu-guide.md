@@ -10,7 +10,9 @@ ubuntu 22.04 桌面版本已经默认安装了，所以无需额外安装。
 
 # win10 镜像
 
-win10镜像可以在[https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1](https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1)该网站下载原版win10镜像。
+win10镜像下载地址：
+
+[https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1](https://next.itellyou.cn/Original/#cbp=Product?ID=f905b2d9-11e7-4ee3-8b52-407a8befe8d1)
 
 建立一个虚拟机文件夹，如win10，接着如下操作步骤：
 
