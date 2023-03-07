@@ -212,5 +212,5 @@ qemu-system-x86_64 -m 1024 -smp 2 -boot cd -hda /server/kvm-1.qcow2  -enable-kvm
 
 # 参考文献
 
-1. [QEMU -  Arch Linux 中文维基-https://wiki.archlinuxcn.org/wiki/QEMU#top-page](https://wiki.archlinuxcn.org/wiki/QEMU#top-page)
-2. [How to install Windows 10 in QEMU-https://computernewb.com/wiki/QEMU/Guests/Windows_10](https://computernewb.com/wiki/QEMU/Guests/Windows_10)
+1. [QEMU -  Arch Linux 中文维基](https://wiki.archlinuxcn.org/wiki/QEMU#top-page)
+2. [How to install Windows 10 in QEMU](https://computernewb.com/wiki/QEMU/Guests/Windows_10)
