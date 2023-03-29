@@ -4,26 +4,27 @@ date: 2023-03-29
 tags: Git
 ---
 
-1. 查看所有本地分支：
+### 1. 查看所有本地分支：
+
 ```sh
 git branch
 ```
 
 
-2. 删除本地分支：
+### 2. 删除本地分支：
 
 ```sh
 git branch -D branch_name
 ```
 其中，branch_name为要删除的分支名称。
 
-3. 查看所有远程分支：
+### 3. 查看所有远程分支：
 
 ```sh
 $ git branch -r
 ```
 
-4. 删除远程分支：
+### 4. 删除远程分支：
 ```shell
 git push origin --delete branch_name
 ```
