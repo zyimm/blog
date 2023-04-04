@@ -1,7 +1,7 @@
 ---
 title: C 语言实现类似php的array数据类型
 date: 2023-03-30
-tags: Git
+tags: C
 ---
 
 ```c

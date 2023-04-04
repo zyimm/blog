@@ -21,8 +21,8 @@ ssh-keygen -t rsa -C "your_email@example.com"
 ```sh
 git config --global core.sshCommand "openssh-client -o StrictHostKeyChecking=no -i /path/to/your/key.pem"  
 ```
-
 1. `--global` 参数代表全局使用，不全局使用则需要进入对应本地仓库目录进行设置
+
 2. `/path/to/your/key.pem` 是你的私钥
 
 ### 远程仓库设置公钥
