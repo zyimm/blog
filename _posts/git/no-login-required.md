@@ -4,11 +4,11 @@ date: 2023-04-01
 tags: Git
 ---
 
-## 方式一配置ssh实现免密登录
+## [方式一] 配置ssh实现免密登录
 
 > 本地需要安装OpenSS扩展
 
-### 通过终端生成rsa key
+### 第一步 通过终端生成rsa key
 
 ```sh
 ssh-keygen -t rsa -C "your_email@example.com"  
@@ -16,7 +16,7 @@ ssh-keygen -t rsa -C "your_email@example.com"
 
 `your_email@example.com` 是你自己的邮箱域名，该命令一路回车，生成一对rsa密钥并将电子邮件地址设置为“your_email@example.com”，你git仓库使用的邮箱与此对应。
 
-### git中设置密钥
+### 第二步 git中设置密钥
 
 ```sh
 git config --global core.sshCommand "openssh-client -o StrictHostKeyChecking=no -i /path/to/your/key.pem"  
@@ -28,25 +28,25 @@ git config --global core.sshCommand "openssh-client -o StrictHostKeyChecking=no 
 
 **或将SSH密钥添加到ssh-agent**
 
-1. 在后台启动 ssh 代理
+- 在后台启动 ssh 代理
 
 ```sh
 eval "$(ssh-agent -s)"
 ```
 
-2. 添加私钥
+- 添加私钥
 
 ```sh
  ssh-add ~/.ssh/私钥
 ```
 
-### 远程仓库设置公钥
+### 第三步 远程仓库设置公钥
 
 远程仓库如github,gitlab 会有一个设置保存ssh地方，将你的公钥也就是.pub结尾的复制上去便可！
 
-git的ssh和linux ssh免密登录是原理一致的！
+> git的ssh和linux ssh免密登录是原理一致的！
 
-## 方式二使用credential.helper
+## [方式二] 使用credential.helper
 
 `credential.helper` 参数配置用于指定 Git 在连接远程服务器时使用的密码存储程序。默认情况下，Git 使用 ~/.ssh/id_rsa.pub 文件存储密码，但可以使用 store 选项来更改该默认设置。
 
