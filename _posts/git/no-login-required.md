@@ -8,7 +8,7 @@ tags: Git
 
 > 本地需要安装OpenSS扩展
 
-### 通过终端生成rsa key 
+### 通过终端生成rsa key
 
 ```sh
 ssh-keygen -t rsa -C "your_email@example.com"  
@@ -21,16 +21,30 @@ ssh-keygen -t rsa -C "your_email@example.com"
 ```sh
 git config --global core.sshCommand "openssh-client -o StrictHostKeyChecking=no -i /path/to/your/key.pem"  
 ```
+
 1. `--global` 参数代表全局使用，不全局使用则需要进入对应本地仓库目录进行设置
 
 2. `/path/to/your/key.pem` 是你的私钥
 
+**或将SSH密钥添加到ssh-agent**
+
+1. 在后台启动 ssh 代理
+
+```sh
+eval "$(ssh-agent -s)"
+```
+
+2. 添加私钥
+
+```sh
+ ssh-add ~/.ssh/私钥
+```
+
 ### 远程仓库设置公钥
+
 远程仓库如github,gitlab 会有一个设置保存ssh地方，将你的公钥也就是.pub结尾的复制上去便可！
 
-git的ssh和linux ssh免密登录是原理一致的！ 
-
-
+git的ssh和linux ssh免密登录是原理一致的！
 
 ## 方式二使用credential.helper
 
