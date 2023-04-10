@@ -14,7 +14,7 @@ tags: Git
 ssh-keygen -t rsa -C "your_email@example.com"  
 ```
 
-`your_email@example.com` 是你自己的邮箱域名，该命令一路回车，生成一对rsa密钥并将电子邮件地址设置为“your_email@example.com”。你git仓库使用的邮箱与此对应。
+`your_email@example.com` 是你自己的邮箱域名，该命令一路回车，生成一对rsa密钥并将电子邮件地址设置为“your_email@example.com”，你git仓库使用的邮箱与此对应。
 
 ### git中设置密钥
 
