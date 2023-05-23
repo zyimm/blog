@@ -6,7 +6,7 @@ tags: mysql
 
 ## 解决
 
-在日常使用mysqldump进行数据备份时，会会出现如下的问题：
+在日常使用mysqldump进行数据备份时，会出现如下的问题：
 
 ```sh
 mysqldump -h ***  -u root -p --skip-lock-tables mig_test > /var/log/mysql/bak.sql
