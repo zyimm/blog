@@ -122,8 +122,7 @@ $arr = [
 
 ## 代码约束
 
-1. declare_strict 严格声明
-主要解决程序在处理类型时候避免隐性转换
+1. declare_strict 严格声明。主要解决程序在处理类型时候避免隐性转换
 
 ```php
 declare(strict_types=1);
