@@ -12,11 +12,9 @@ tags: Ubuntu
 解决办法如下：
 ```sh
 # root  账号无需加上sudo
-
 sudo killall snap-store
 
 sudo snap refresh snap-store
-
 ```
 
 
@@ -36,9 +34,8 @@ snap refresh --hold firefox
 
 ### 通过 --unhold 参数重新启用自动更新
 
-```
+```sh
 snap refresh --unhold
-
 # 同理恢复某个软件更新,如火狐
 snap refresh --unhold firefox
 ```
