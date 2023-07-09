@@ -54,8 +54,8 @@ ssh-copy-id -i pub_key_file user@host
 
 ```
 Host zyimm
-	HostName 192.168.1.1
-	User tom
+    HostName 192.168.1.1
+    User tom
     Port 22
     IdentityFile file_key
 ```
@@ -86,7 +86,7 @@ ssh  zyimm # 即可免密登陆192.168.1.1服务器了
 ```
 如果使用vscode 建议下载 Remote-ssh 扩展,搭配使用更舒服！
 
-> 记得配置之后需要重启ssh服务！常见重启ssh服务命令如下（选择其中之一即可）：
+> 记得配置之后需要重启服务器上的ssh服务！常见重启ssh服务命令如下（选择其中之一即可）：
 ```sh
 service sshd restart
 systemctl restart sshd.service
