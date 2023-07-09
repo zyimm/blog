@@ -6,6 +6,6 @@ tags: npm|node
 
 搜索一下可能与node的版本有关，目前可以确认node17以下没啥问题,node18以上需要执行如下命令：
 
-```
+```sh
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
