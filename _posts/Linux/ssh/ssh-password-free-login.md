@@ -52,10 +52,10 @@ ssh-copy-id -i pub_key_file user@host
 
 ## 配置config
 
-在当前用户 `~/.ssh/` 新建config文本 若存在无需创建
+配置config目的在于简化ssh登录命令，在当前用户 `~/.ssh/` 新建config文本 若存在无需创建。
 
 
-配置如下
+配置如下：
 
 ```
 Host zyimm
@@ -64,6 +64,9 @@ Host zyimm
     Port 22
     IdentityFile file_key
 ```
+> 配置文本格式，只需要同级别空格对齐即可。
+
+
 
 ### HostName
 
@@ -83,12 +86,22 @@ Host zyimm
 SSH访问主机的端口号，默认是22端口，同上，只有在非默认情况下才需要设置该值
 
 
+
+
 ## 使用
 
 ```sh
 ssh  zyimm # 即可免密登陆192.168.1.1服务器了
 ```
 如果使用vscode 建议下载 Remote-ssh 扩展,搭配使用更舒服！
+
+> 记得配置之后需要重启ssh服务！常见重启ssh服务命令如下（选择其中之一即可）：
+```sh
+service sshd restart
+systemctl restart sshd.service
+/etc/init.d/ssh restart
+```
+
 
 ## 调试
 如果在上面步骤操作完之后，仍然出现一些问题，可以在命令中带上-v以便定位问题
