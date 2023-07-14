@@ -1,3 +1,4 @@
+```shell
 .
 ├── _posts
 │   ├── AI
@@ -42,3 +43,5 @@
 │       └── PHP
 │           └── standard.md
 └── README.md
+
+```
