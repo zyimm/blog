@@ -72,7 +72,7 @@ qemu-system-x86_64 -m 1GB -boot cd -hda /server/kvm-1.qcow2 -mem-path /dev/hugep
 
 对于内存访问密集型的应用，使用huge page是可以比较明显地提高客户机性能。使用huge page的内存不能被换出（swap out），也不能使用ballooning方式自动增长。
 
-**x86支持2MB大小的大页（huge page**
+**x86支持2MB大小的大页（huge page)**
 
 **示例**
 
