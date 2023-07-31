@@ -54,7 +54,7 @@ class Email implements StrategyInterface
 }
 ```
 
-2. ☝定义好策略调度规则&统一入口
+2. 👉定义好策略调度规则&统一入口
 
 ```php
 class DispatchStrategy
