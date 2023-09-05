@@ -24,6 +24,7 @@ tags: 设计模式
 **😼1.定义cache工厂类(父类)和依赖类**
 
 ```php
+// config 配置类 用于缓存实例化依赖配置数据
 class Config
 {
     private string $host; //连接host
@@ -79,28 +80,33 @@ class Config
     }
 }
 
-```
+// 工厂类
 
-**😸2.编写各个类型cache子类**
-
-```php
 class Cache
 {
     protected  Config $config;
 
     public function __construct(Config $config)
     {
+        //通过构造注入Config依赖
         $this->config = $config;
     }
 
     public static create(string $cache) 
     {
-         return   new $cache($this->config);
+        //创建实例
+        return   new $cache($this->config);
     }
 
     
 }
 
+
+```
+
+**😸2.编写各个类型cache子类**
+
+```php
 
 class Redis extends Cache
 {
