@@ -35,6 +35,8 @@ class Config
 
     private string $userName;// 用户名
 
+    private int $port; //端口
+
     public function getHost(): string
     {
         return $this->host;
@@ -78,6 +80,18 @@ class Config
         $this->userName = $userName;
         return $this;
     }
+    
+    
+    public function getPort(): string
+    {
+        return $this->port;
+    }
+
+    public function setPort(int $port): static
+    {
+        $this->port = $port;
+        return $this;
+    }
 }
 
 // 工厂类
@@ -111,6 +125,8 @@ class Cache
 class Redis extends Cache
 {
 
+    private Redis $redis
+
     public function __construct(Config $config)
     {
         parent::__construct(Config $config);
@@ -121,6 +137,14 @@ class Redis extends Cache
     protected function connect()
     {
         //根据Config进行缓存连接
+        $redis = new \Redis();
+
+        // 连接 Redis 服务器
+        $redis->connect($this->config->getHost() , $this->config->getPort() ??  6379);
+
+        // 可选：设置 Redis 密码
+        $redis->auth($this->config->getPassword());
+
     }
 }
 
