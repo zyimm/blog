@@ -121,7 +121,7 @@ class Cache
 **😸2.编写各个类型cache子类**
 
 ```php
-
+// redis 
 class Redis extends Cache
 {
 
@@ -137,18 +137,25 @@ class Redis extends Cache
     protected function connect()
     {
         //根据Config进行缓存连接
-        $redis = new \Redis();
+        $this->redis = new \Redis();
 
         // 连接 Redis 服务器
-        $redis->connect($this->config->getHost() , $this->config->getPort() ??  6379);
+        $this->redis->connect($this->config->getHost() , $this->config->getPort() ??  6379);
 
         // 可选：设置 Redis 密码
-        $redis->auth($this->config->getPassword());
+        $this->redis->auth($this->config->getPassword());
 
     }
+
+    // 动态调用redis 方法
+    public function __call($method, ...$arguments) {
+        call_user_func([$this->redis, $method], ...$arguments);
+    }
+
+
 }
 
-
+//内存
 class Memory extends Cache
 {
 
@@ -162,6 +169,7 @@ class Memory extends Cache
    
 }
 
+//文件
 class File extends Cache
 {
 
@@ -171,7 +179,6 @@ class File extends Cache
     {
          parent::__construct(Config $config);
 
-        
     }
 
    
