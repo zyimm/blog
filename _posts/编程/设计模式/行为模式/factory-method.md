@@ -18,9 +18,10 @@ tags: 设计模式
 3. cache工厂类创建调用
 
 # 实现
->>这边实现使用PHP代码作为演示，其他oop语言逻辑类似。
+> 这边实现使用PHP代码作为演示，其他oop语言逻辑类似。
 
-1. 😼定义cache工厂类(父类)和依赖类
+
+**😼1.定义cache工厂类(父类)和依赖类**
 
 ```php
 class Config
@@ -80,7 +81,8 @@ class Config
 
 ```
 
-2. 😸编写各个类型cache子类
+**😸2.编写各个类型cache子类**
+
 ```php
 class Cache
 {
@@ -147,7 +149,7 @@ class File extends Cache
 
 ```
 
-3. 😺cache工厂类创建调用
+**😺3.cache工厂类创建调用**
 
 ```php
 class  Demo
