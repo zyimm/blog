@@ -1,7 +1,7 @@
 ---
 title: 💯git一些常见问题解决
 date: 2023-10-06
-tags: git
+tags: Git
 ---
 
 本篇文章记录git一些常见问题解决，不定时更新！
