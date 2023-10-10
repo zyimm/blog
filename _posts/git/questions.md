@@ -4,7 +4,7 @@ date: 2023-10-06
 tags: git
 ---
 
-本篇文章记录it一些常见问题解决，不定时更新！
+本篇文章记录git一些常见问题解决，不定时更新！
 
 
 1.**You asked to pull from the remote 'gitea', but did not specify a branch. Because this is not the default configured remote for your current branch, you must specify a branch on the command line**
