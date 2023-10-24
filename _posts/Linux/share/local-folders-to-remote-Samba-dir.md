@@ -5,13 +5,13 @@ tags: Samba
 ---
 
 家里一台软路由安装了jellyfin，想把媒体目录挂载到另一台大容量的主机上。所以要将这台大容量的主机上通过Samba共享给软路由主机上，因此需将软路由主机本地文件夹映射到远程大容量的主机Samba共享目录下。
-<!--more-->
+
 前提Samba安装配置已经在两台主机上配好，这里不再复述！
 
 # 安装软件包
 
 目前可以通过`cifs-utils`工具包实现。cifs-utils 是一个用于在 Linux 系统上实现与 Windows 共享文件夹交互的软件包。它提供了一组工具和库，允许 Linux 系统通过 CIFS（Common Internet File System）协议连接和访问远程 Windows 共享。
-
+<!--more-->
 > 当然linux与linux之间也是可以的！
 
 ```shell
