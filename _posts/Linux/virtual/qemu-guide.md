@@ -1,5 +1,7 @@
 ---
 title: Qemu模拟win10环境
+date: 2023-03-10
+tags: Qemu
 ---
 
 # QEMU
