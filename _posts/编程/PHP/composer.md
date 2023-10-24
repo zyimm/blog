@@ -23,7 +23,7 @@ tags: PHP
     }
 }
 ```
-
+<!--more-->>
 然后执行`composer install` 或 `composer require <your-package@dev-master>`
 
 ## 排除特定文件或目录不被自动加载
