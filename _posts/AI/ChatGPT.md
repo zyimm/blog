@@ -50,7 +50,7 @@ client.loop_forever()
 ```
 
 上面的代码展示了如何连接到MQTT服务器并订阅主题。您还可以使用client.publish()方法发布消息到指定主题!
-
+<!--more-->
 
 ## 音响领域问题
 

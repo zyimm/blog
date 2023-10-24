@@ -14,7 +14,7 @@ tags: Ubuntu
 sudo apt purge $(dpkg -l|grep ^rc|awk '{ print $2 }')
 sudo apt purge $(dpkg -l|grep iF|awk '{ print $2 }')
 ```
-
+<!--more-->
 > 注解：
 1. `$(......)` 是一个shell表示法，即里面包含括号中的命令输出的内容。
 2. `dpkg -l`列出系统中所有安装的软件，如果是已经删除的软件（有残存的配置文件），那么该的软件包的状态是rc，即开头显赫为rc 然后是空格，然后是软件包的名称。如果是iF开头就是配置失败的软件。

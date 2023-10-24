@@ -19,7 +19,7 @@ sudo apt-get autoremove docker docker-ce docker-engine docker.io containerd runc
 dpkg -l | grep docker
 dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P 
 ```
-
+<!--more-->
 ## 卸载没有删除的docker相关插件,比如
 ```
 sudo apt-get autoremove docker-ce-*

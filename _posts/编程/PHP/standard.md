@@ -28,7 +28,7 @@ tags: PHP
      public $baz;
  }
 ```
-
+<!--more-->>
 2. 变量以及属性多态类型优先级
 
 ```php

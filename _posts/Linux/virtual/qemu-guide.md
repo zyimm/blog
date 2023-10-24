@@ -24,7 +24,7 @@ win10镜像下载地址：
 qemu-system-x86_64 -hda ./win10.img -cdrom win10.iso  -boot d -enable-kvm -machine q35 -device intel-iommu -smp 2,sockets=1,cores=2 -m 2G -vga std -net nic,model=e1000 -net user -usbdevice tablet
 
 ```
-
+<!--more-->
 提示：
 下次启动，移除`-cdrom win10.iso` 参数，第一次需要通过cdrom镜像安装，等于实际光盘安装系统！
 

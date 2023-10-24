@@ -16,7 +16,7 @@ tags: PHP
 ```shell
 apk  add libcurl curl-dev
 ```
-
+<!--more-->>
 libcurl curl-dev 是linux下curl开发一系列依赖库和文件。http扩展需要curl，所以需要安装相关依赖！
 
 2. please install and enable pecl/raphf

@@ -24,7 +24,7 @@ OPTIONS说明：
 
 ## docker 定时任务执行
 > 下面是PHP的satis私有镜像仓库命令在docker中同步命令如下：
-
+<!--more-->
 ```shell
 docker exec php74 /bin/sh -c "cd satis/ && php bin/satis build satis.json public/"
 ```

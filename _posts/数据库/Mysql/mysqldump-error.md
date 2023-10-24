@@ -21,6 +21,7 @@ Unknown table 'COLUMN_STATISTICS' in information_schema (1109)
 ```
 经查阅相关资料得知，需要添加`--column-statistics=0`即可。我猜测的原因可能是备份数据时候在读取相关表结构没有相关权限，所以报此错误。通过添加`--column-statistics=0`进行关闭，以免报错。
 
+<!--more-->
 ## column-statistics解释
 
 `--column-statistics` 是一个用于输出列统计信息的选项。这个选项可以让 mysqldump 在备份数据时，输出每个表的列名、数据类型、长度、默认值、是否为 null 等信息，同时还输出了每个列的统计信息，包括平均长度、总长度、字符集、数字类型的比例等信息。

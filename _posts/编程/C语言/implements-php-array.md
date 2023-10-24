@@ -38,7 +38,7 @@ void push(Array* arr, void* element) {
     }
     arr->data[arr->size++] = element;
 }
-
+<!--more-->
 // 从动态数组中删除一个元素
 void removeElement(Array* arr, int index) {
     if (index < 0 || index >= arr->size) {

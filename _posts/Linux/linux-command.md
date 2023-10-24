@@ -13,7 +13,7 @@ docker pull ghcr.io/jaywcjlove/linux-command:latest
 # 自定义端口
 docker run --name linux-command --rm -d -p 3100:3000 wcjiang/linux-command:latest
 ```
-
+<!--more-->
 在浏览器中访问如下地址:
 
 `http://localhost:3100/`

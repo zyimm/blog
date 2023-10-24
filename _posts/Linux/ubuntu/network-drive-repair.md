@@ -15,13 +15,14 @@ tags: Ubuntu
 ```shell
 lspci -k |grep Ethernet
 ```
+
 显示如下:
+
 ```shell
 01:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller (rev 05)
 ```
-
+<!--more-->
 可以看到我的网卡是**Realtek Semiconductor Co., Ltd. RTL8125**,然后到供应商官网寻找对应驱动，[下载地址](https://www.realtek.com/zh/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software)。
-
 
 ### 解压&安装
 
@@ -35,6 +36,7 @@ sudo ./autorun.sh
 ```
 
 ### 检测
+
 安装完毕之后，可以通过如下命令验证
 
 ```shell
@@ -42,4 +44,5 @@ lsmod | grep r8125
 
 ifconfig -a
 ```
+
 如果上述命令能正常显示有关网卡驱动信息，且系统设置界面按钮可操作则代表成功！

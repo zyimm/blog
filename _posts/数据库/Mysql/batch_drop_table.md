@@ -23,7 +23,7 @@ EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 ```
-
+<!--more-->>
 
 上述代码中的 `database_name` 替换为要操作的数据库的名称，`regex_pattern` 替换为要匹配的表名的正则表达式模式。
 
