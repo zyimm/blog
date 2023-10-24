@@ -35,6 +35,8 @@ sudo mount -t cifs //192.168.1.100/samba-share samba-mount -o username=user,pass
 
 ## 取消挂载
 
+想要取消挂载，可以使用 umount 命令将挂载的目录卸载
+
 ```shell
 sudo umount samba-mount
 ```
