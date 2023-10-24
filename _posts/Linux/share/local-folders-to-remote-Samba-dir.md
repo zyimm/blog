@@ -33,7 +33,7 @@ sudo mount -t cifs //192.168.1.100/samba-share samba-mount -o username=user,pass
 
 执行命令后，如果连接成功，远程 Samba 目录将被挂载到本地文件夹 samba-mount。
 
-## 取消挂载
+# 取消挂载
 
 想要取消挂载，可以使用 umount 命令将挂载的目录卸载
 
