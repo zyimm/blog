@@ -25,7 +25,7 @@ opkg update && opkg install cifs-utils
 `mkdir samba-mount`
 
 **2.挂载远程Samba目录**  
-假设远程 Samba 服务器的 IP 地址是 192.168.1.100，共享目录路径是 /samba-share，你的用户名是 user，密码是 password，可以使用以下命令进行挂载:
+假设远程 Samba 服务器的 IP 地址是 `192.168.1.100`，共享目录路径是 `/samba-share`，你的用户名是 `user`，密码是 `password`，可以使用以下命令进行挂载:
 
 ```shell
 sudo mount -t cifs //192.168.1.100/samba-share samba-mount -o username=user,password=password
