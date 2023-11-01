@@ -1,6 +1,6 @@
 ---
 title: Linux Command 本地镜像
-date: 202-10-10
+date: 2022-10-10
 tags: Linux
 ---
 
