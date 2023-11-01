@@ -1,7 +1,9 @@
 ---
 title: 🧬PHP的yield到协程直观的理解
 date: 2023-11-01
-tags: PHP,协程
+tags: 
+    - PHP
+    - 协程
 ---
 
 在PHP8.1未发布`fiber`之前，你可能会听到一些前辈说"PHP的`yield`就是协程"，但是官方文档对于`yield`是如下解释：
