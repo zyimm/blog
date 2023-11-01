@@ -116,3 +116,23 @@ Fiber可以使用 Fiber::resume() 传递任意值、或者使用 Fiber::throw() 
 3. 更强大的协程通信：fiber 提供了更强大的协程通信机制，可以在协程之间传递数据和消息，实现更复杂的协程间交互和协作。
 
 但是截止本博文发稿之前，fiber目前还远远达不到类似swoole的协程开箱即用的程度，调度器实现仍然需要开发者自己实现！如果想快速简单使用协程建议使用swoole！
+
+如下swoole协程使用范例：
+
+1w次数据链接读取操作，调用者根本不需要关系底层如何调度和切换，但是原生fiber和yield是需要调用者自行实现！
+
+```php
+\Swoole\Runtime::enableCoroutine();
+\Swoole\Coroutine\run(function() {
+    for ($c = 100; $c--;) {
+        \Swoole\Coroutine::create(function () {
+            $pdo = new PDO('mysql:host=127.0.0.1;dbname=test;charset=utf8', 'root', '****');
+            $statement = $pdo->prepare('SELECT * FROM `xxx`');
+            for ($n = 100; $n--;) {
+                $statement->execute();
+                assert(count($statement->fetchAll()) > 0);
+            }
+        });
+    }
+});
+```
