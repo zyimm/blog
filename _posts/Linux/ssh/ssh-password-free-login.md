@@ -1,7 +1,9 @@
 ---
-title: ssh 免密登陆
+title: 👣ssh 免密登陆
 date: 2022-10-06
-tags: ssh
+tags: 
+    - ssh
+    - Linux
 ---
 
 由于更换新电脑，需要生成新的密钥去免密登陆服务器，小记一下流程，免得下次还得搜索一下相关教程。
@@ -51,7 +53,7 @@ ssh-copy-id -i pub_key_file user@host
 
 配置如下：
 
-```
+```sh
 Host zyimm
     HostName 192.168.1.1
     User tom
@@ -61,19 +63,19 @@ Host zyimm
 
 > 配置文本格式，只需要同级别空格对齐即可。
 
-### HostName
+**HostName**
 
 需要ssh连接过去的主机名，一般是IP地址。
 
-### User
+**User**
 
 登录主机的用户名
 
-### IdentityFile
+**IdentityFile**
 
 认证证书文件，默认位置是~/.ssh/id_rsa, ~/ssh/id_dsa等，如果采用默认的证书，可以不用设置此参数，除非你的证书放在某个自定义的目录，那么你就需要设置该参数来指向你的证书
 
-### Port
+**Port**
 
 SSH访问主机的端口号，默认是22端口，同上，只有在非默认情况下才需要设置该值
 
@@ -98,5 +100,5 @@ systemctl restart sshd.service
 如果在上面步骤操作完之后，仍然出现一些问题，可以在命令中带上-v以便定位问题
 
 ```sh
-ssh  zyimm  -v # 
+ssh  zyimm  -v
 ```
