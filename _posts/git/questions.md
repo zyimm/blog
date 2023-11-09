@@ -33,6 +33,6 @@ git config --global http.postBuffer 10240000000
 ```sh
 server {
     // 其他配置省略
-    client_max_body_size 500m
+    client_max_body_size 500m;
 }
 ```
