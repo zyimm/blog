@@ -22,13 +22,14 @@ git pull <remote> <branch>
 
 要解决这个问题，有如下操作：
 
-1. 增加 Git 中缓存的默认限制：
+1.增加 Git 中缓存的默认限制：
 
 ```bash
 git config --global http.postBuffer 10240000000
 ```
 
-2. 服务端是用nginx反向代理的，修改nginx配置:
+2.服务端是用nginx反向代理的，修改nginx配置:
+
 ```sh
 server {
     // 其他配置省略
