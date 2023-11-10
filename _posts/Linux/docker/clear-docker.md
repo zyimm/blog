@@ -46,6 +46,11 @@ dpkg -l | grep docker
 
 ```sh
 sudo apt remove --purge xxx# 
+```
+
+## 验证
+
+```sh
 # 验证下 此处应该报错
 docker -v
 ```
