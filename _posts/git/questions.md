@@ -6,7 +6,7 @@ tags: Git
 
 本篇文章记录git一些常见问题解决，不定时更新！
 
-1.**You asked to pull from the remote 'gitea', but did not specify a branch. Because this is not the default configured remote for your current branch, you must specify a branch on the command line**
+### 1.You asked to pull from the remote 'gitea', but did not specify a branch. Because this is not the default configured remote for your current branch, you must specify a branch on the command line
 
 这个错误提示说明在从远程仓库拉取代码时没有指定分支。由于当前分支不是默认配置的远程分支，所以需要在命令行中指定分支。
 
@@ -16,7 +16,7 @@ tags: Git
 git pull <remote> <branch>
 ```
 
-2.**error: RPC 失败。HTTP 413 curl 22 The requested URL returned error: 413 send-pack: unexpected disconnect while reading sideband packet**
+### 2.error: RPC 失败。HTTP 413 curl 22 The requested URL returned error: 413 send-pack: unexpected disconnect while reading sideband packet
 
 这个错误提示说明推送包（push package）太大了，超过了服务器所允许的大小限制。
 
@@ -36,7 +36,7 @@ server {
     client_max_body_size 500m;
 }
 ```
-3.**fatal: 拒绝合并无关的历史**
+### 3.fatal: 拒绝合并无关的历史
 
 这个错误通常发生在尝试合并两个没有共同历史的分支时。解决这个问题的一种方法是使用--allow-unrelated-histories选项来强制合并。命令如下：
 
