@@ -1,6 +1,6 @@
 # 关于本站
 
-由 [Hexo](https://hexo.io/zh-cn/) & [NexT.Mist(主题)](https://theme-next.org/) 驱动支持。因评论系统基于Gittalk，中国大陆地区读者访问本站是网络可能存在不稳定性！
+由 [Hexo](https://hexo.io/zh-cn/) & [NexT.Mist(主题)](https://theme-next.org/) 驱动支持。因评论系统基于Gittalk，中国大陆地区读者访问本站可能存在网络不稳定性！
 
 ## 内容声明
 
@@ -12,7 +12,7 @@
 
 ## 异议处理
 
-如果您发现本站中的任何内容有任何形式的问题、侵犯了您的权益或者您有任何意见或建议，敬请与网站管理员取得联系，我将及时处理并给予回复：
+如果您发现本站中的任何内容有任何形式的问题、侵犯了您的权益或者您有任何意见或建议，敬请与网站管理员取得联系，以便及时处理并给予回复：
 
 1. Github： [https://github.com/zyimm](https://github.com/zyimm)
 2. mail: [zyimm@qq.com](zyimm@qq.com)
