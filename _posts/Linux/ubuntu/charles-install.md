@@ -1,12 +1,14 @@
 ---
 title: Ubuntu 22.04.1下安装Charles
 date: 2022-11-05
-tags: Charles
+tags: 
+    - Charles
+    - 抓包
 ---
 
-[charles 官网](https://www.charlesproxy.com/) 下载Charles，Debian系列发行版可以使用 `apt-get install charles-proxy` 安装,不过需要提前安装对应key才可以安装，我这边是直接下载安装包解压安装。
+[Charles 官网](https://www.charlesproxy.com/) 下载Charles，Debian系列发行版可以使用 `apt-get install charles-proxy` 安装,不过需要提前安装对应key才可以安装，我这边是直接下载安装包解压安装。
 
-## 解压&安装
+## 1.解压&安装
 
 ```shell
 # 下载包具体以最新版本为准
@@ -19,7 +21,7 @@ mv charles /opt/
 
 ```
 <!--more-->
-## 创建启动图标
+## 2.创建启动图标
 
 因为解压安装默认是不会生成启动图标的，所以需要单独创建
 
@@ -49,7 +51,7 @@ Categories=Utility;
 
 ```
 
-说明一下：
+**说明一下：**
 
 1. Exec 是程序执行路径
 2. Icon 图标
@@ -59,11 +61,11 @@ Categories=Utility;
 
 `sudo chmod u+x charles.desktop` 最后赋予执行权限，接下来在启动页面搜索`Charles` 可以启动对应程序！
 
-## Charles激活
+## 3.Charles激活
 
-### 现成激活账号
+### 3.1 现成激活账号
 
-```
+```sh
 https://zhile.io
 
 48891cf209c6d32bf4
