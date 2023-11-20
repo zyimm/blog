@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2020-09-30
 ---
 欢迎光临[hexo](https://hexo.io/)！这是你的第一篇文章。
 
