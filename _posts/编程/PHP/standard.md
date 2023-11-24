@@ -1,9 +1,9 @@
 ---
 title: PHP代码统一规范规则细节
 date: 2023-06-09
-tags: PHP
+tags: 
+    - PHP
 ---
-# 规则Rule
 
 ## PHPDoc
 

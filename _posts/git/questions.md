@@ -36,6 +36,7 @@ server {
     client_max_body_size 500m;
 }
 ```
+
 ### 3.fatal: 拒绝合并无关的历史
 
 这个错误通常发生在尝试合并两个没有共同历史的分支时。解决这个问题的一种方法是使用--allow-unrelated-histories选项来强制合并。命令如下：
@@ -43,5 +44,5 @@ server {
 ```sh
 git merge --allow-unrelated-histories <branch_name>
 ```
-这个命令将允许你合并两个没有共同历史的分支。如果有冲突发生，需要解决冲突并手动提交合并结果。
 
+这个命令将允许你合并两个没有共同历史的分支。如果有冲突发生，需要解决冲突并手动提交合并结果。

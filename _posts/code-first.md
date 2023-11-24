@@ -1,5 +1,9 @@
 ---
 title: 这是一段来源于 `carbon.now.sh` 的代码
+title: Git 免密登录
+date: 2022-09-30
+tags: 
+  - javascript
 ---
 
 carbon.now.sh 可以让你的文本代码转换成图片，并可以随时分享出去！

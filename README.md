@@ -4,7 +4,7 @@ date: 2021-09-30
 ---
 ## 关于本站
 
-由 [Hexo](https://hexo.io/zh-cn/) & [NexT.Mist(主题)](https://theme-next.org/) 驱动支持。因评论系统基于Gittalk，中国大陆地区读者访问本站时，可能存在网络不稳定性！
+由 [Hexo](https://hexo.io/zh-cn/) & [NexT.Mist(主题)](https://theme-next.org/) 驱动支持。因评论系统基于Gitalk，中国大陆地区读者访问本站时，可能存在网络不稳定性！
 
 网站名称为何取名为 **Wake Me Up When September Ends** ？
 

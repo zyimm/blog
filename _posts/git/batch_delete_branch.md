@@ -51,4 +51,5 @@ git branch -r | grep -v "main" | sed 's/origin\//:/' |  xargs git push
 ```shell
 git remote prune origin
 ```
+
 该命令会检查本地仓库中的远程分支引用，并将那些在远程仓库中已经不存在的分支引用删除掉，以保持本地仓库的分支列表与远程仓库保持同步。

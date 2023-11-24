@@ -1,12 +1,14 @@
 ---
 title: 设计模式-策略模式🍋
 date: 2023-07-30
-tags: 设计模式
+tags: 
+    - 设计模式
 ---
 
 策略模式是一种行为设计模式， 它能让你定义一组算法和策略， 并将每种算法分别放入独立的类中， 根据不同场景使用不同算法和策略。
 
 # 需求的场景
+
 假设以需要一个服务或模块来实现消息通知功能，一开始只需要邮件通知，你实现发送邮件通知功能😀。。。。
 
 然后几天后需求方提出能不能增加短信通知，你加班加点实现短信通知功能 😵。。。
@@ -28,6 +30,7 @@ tags: 设计模式
 3. 约定好策略算法接口
 
 # 实现
+
 这边使用PHP语言实现，其他具有oop编程语言逻辑类似
 
 1. 👆定义策略算法接口
@@ -38,6 +41,7 @@ interface StrategyInterface
     public function handle(ContextInterface $content): mixed;
 }
 ```
+
 接口StrategyInterface handle 依赖Context上下文对象。Context在这个需求中可以封装为需要发送消息对象实现依赖。如短信，邮件:
 
 ```php
@@ -72,7 +76,6 @@ class DispatchStrategy
     }
 }
 ```
-
 
 3. 🫰运行调用
 
