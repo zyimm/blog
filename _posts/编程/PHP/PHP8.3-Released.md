@@ -3,7 +3,7 @@ title: 🎉PHP 8.3发布与新特性
 date: 2023-11-23
 tags: PHP
 ---
-PHP 8.3已经如期发不了，看一下新版特带来哪些特性！
+PHP 8.3已经如期发布，看一下新版特带来哪些特性！
 
 ## 常量类型化(Typed class constants)
 
