@@ -1,6 +1,5 @@
 ---
 title: 这是一段来源于 `carbon.now.sh` 的代码
-title: Git 免密登录
 date: 2022-09-30
 tags: 
     - javascript
