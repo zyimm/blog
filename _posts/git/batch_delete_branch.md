@@ -42,6 +42,7 @@ git branch | grep -v "main" | xargs git branch -D
 
 ```shell
 git branch -r | grep -v "main" | sed 's/origin\//:/' |  xargs git push
+# -v：反转匹配，只显示不匹配的行。
 ```
 
 `main`为要保留的分支名称，可以根据需要进行修改。最后一个命令中的sed命令是将远程分支名中的`origin/`替换为`:/`，因为git push命令中需要使用的远程分支名不包含`origin/`
