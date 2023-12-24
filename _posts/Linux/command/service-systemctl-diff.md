@@ -47,4 +47,4 @@ systemctl 命令是新一代的 systemd 系统的服务管理工具。 systemctl
 
 ## 区别
 
-说白了systemd是service替代品，`systemctl` 是systemd前端管理工具。
+说白了systemd是service替代品，`systemctl` 是systemd前端管理工具。对于一些工具，使用原则都是用新不用旧。
