@@ -10,13 +10,13 @@ tags:
 
 ## service 命令
 
-`service` 命令是传统的` SysV init` 系统的服务管理工具。它提供了一种简单的方法来启动、停止、重启和查询系统服务的状态。它通过读取位于 /etc/init.d/ 目录下的服务脚本来管理服务。使用 `service` 命令可以使用服务脚本的名称来操作服务，例如：
-
+`service` 命令是传统的`SysV init` 系统的服务管理工具。它提供了一种简单的方法来启动、停止、重启和查询系统服务的状态。它通过读取位于 /etc/init.d/ 目录下的服务脚本来管理服务。使用 `service` 命令可以使用服务脚本的名称来操作服务，例如：
+<!--more-->
 1. 启动服务：`service <service_name> start`
 2. 停止服务：`service <service_name> stop`
 3. 重启服务：`service <service_name> restart`
 4. 查询服务：`service <service_name> status`
-<!--more-->
+
 ## systemd 命令
 
 systemctl 命令是新一代的 systemd 系统的服务管理工具。 systemctl 命令，有如下使用方式：
