@@ -13,7 +13,7 @@ tags:
 比如对tmp目下大量以xhprof为后缀名文件进行删除：
 
 ```sh
-find ./ -type f -name "*.xhprof" -exec rm {} \
+find ./ -type f -name "*.xhprof" -exec rm {} \;
 ```
 
 1. find: 这是用于在文件系统中搜索文件和目录的命令。
