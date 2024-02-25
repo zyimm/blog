@@ -10,6 +10,8 @@ tags:
 
 promise 对象有三种状态：pending（进行中）、fulfilled（已成功）和 rejected（已失败）。当异步操作执行完成时，Promise 对象的状态会从 pending 转变为 fulfilled 或 rejected，表示操作成功或失败。我们可以通过 then() 方法来处理这些状态的变化，并执行相应的操作。
 
+<!--more-->
+
 在日常开发场景中，我很喜欢用reactphp的promise组件。使用promise可以简化try catch 异常捕获，条码结构简单清晰。
 
 下面我举例一个常规的上传表格导入数据，要求记录每行导入的结果，可以把每行导入excel操作看作一个promise，包含如下过程：
