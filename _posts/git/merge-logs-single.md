@@ -25,4 +25,4 @@ tags: Git
 ## 参考文献
 
 1. [Git 合并多个 commit](https://segmentfault.com/a/1190000007748862)
-2.[如何使用 git rebase 将多个 commit 合并成一个commit ]( https://juejin.cn/post/7050705771218075684)
+2. [如何使用 git rebase 将多个 commit 合并成一个commit ]( https://juejin.cn/post/7050705771218075684)
