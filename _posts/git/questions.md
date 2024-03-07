@@ -73,7 +73,7 @@ git log -p -- <file_path>
 
 这个命令将显示每次提交对指定文件所做的具体变更。
 
-### 5.从远程切除分支并关联
+### 5.从远程checkout分支并关联
 
 ```sh
 git  checkout -b <branch_name> <remote>/<branch_name>
