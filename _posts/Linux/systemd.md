@@ -28,8 +28,10 @@ WantedBy=multi-user.target
 
 将这个服务单元文件保存在 /etc/systemd/system/ 目录下。使用以下命令启用这个服务并启动它：
 
-sudo systemctl enable my-service.service
-sudo systemctl start my-service.service
+```sh
+sudo systemctl enable my-service.service # 启用,随机启动
+sudo systemctl start my-service.service # 启动
+```
 
 ## 常见配置讲解
 
