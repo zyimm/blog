@@ -79,3 +79,7 @@ systemctl是Systemd前端管理工具，用于管理Systemd服务和系统状态
 7. systemctl stop <service-name> 命令用于停止单个 Unit。
 8. systemctl enable <service-name> 命令用于开启单个 Unit 的自动启动。
 9. systemctl disable <service-name> 命令用于禁用单个 Unit 的自动启动。
+
+## 参考
+
+[阮一峰：Systemd 入门教程](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
