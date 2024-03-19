@@ -10,7 +10,7 @@ systemd服务单元文件主要放在`/usr/lib/systemd/system`或`/etc/systemd/s
 
 ## systemd服务单元文件
 
-`systemd`服务单元文件就是服务岁系统自启动的一种脚本。以下是一个示例：
+`systemd`服务单元文件是服务系统自启动的一种脚本。以下是一个示例：
 
 ```sh
 [Unit]
