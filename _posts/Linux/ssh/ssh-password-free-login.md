@@ -23,7 +23,6 @@ SSH 密钥登录分为以下的步骤。
 
 ![25dd3fc40a001c3002872d39865e4baa](http://api.img.zyimm.com/media/20231227/25dd3fc40a001c3002872d39865e4baa.png)
 
-
 <!--more-->
 ## 生成公/私密钥
 
@@ -107,3 +106,37 @@ systemctl restart sshd.service
 ```sh
 ssh  zyimm  -v
 ```
+
+## 登录很慢
+
+如果使用ssh连接Linux服务器，登录很慢可能会等待一段时间，这是由于服务器的DNS解析问题导致的。可以使用以下办法解决：
+
+1.DNS反向解析问题
+
+OpenSSH在用户登录的时候会验证IP，它根据用户的IP使用反向DNS找到主机名，再使用DNS找到IP地址，最后匹配一下登录的IP是否合法。如果客户机的IP没有域名，或者DNS服务器很慢或不通，那么登录就会很花时间。
+
+解决办法：在目标服务器上修改sshd服务器端配置,并重启sshd
+
+```sh
+vi /etc/ssh/sshd_config
+UseDNS no
+```
+
+2.关闭ssh的gssapi认证
+
+用ssh -v user@server 可以看到登录时有如下信息：
+
+```sh
+debug1: Next authentication method: gssapi-with-mic
+debug1: Unspecified GSS failure. Minor code may provide more information
+```
+
+解决办法：
+
+修改sshd服务器端配置
+
+```sh
+GSSAPIAuthentication no
+```
+
+GSSAPI ( Generic Security Services Application Programming Interface) 是一套类似Kerberos 5的通用网络安全系统接口。
