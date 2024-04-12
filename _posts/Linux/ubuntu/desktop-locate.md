@@ -21,6 +21,8 @@ Ubuntu的desktop文件相当于windows的桌面软件快捷方式，可以在任
 /usr/share/applications
 ```
 
+<!--more-->
+
 > `.desktop`桌面文件的一些常见配置项：
 
 1. Name：应用程序的可读名称。
