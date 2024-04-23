@@ -8,6 +8,8 @@ tags: Linux
 
 地址❤️：[开发工具-速查表！http://ref.zyimm.com](http://ref.zyimm.com/)
 
+如果需要自己部署，可以参考如下docker部署:
+
 ## docker 安装
 
 ```shell
