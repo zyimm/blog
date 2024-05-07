@@ -17,7 +17,7 @@ docker network create --subnet=172.0.0.0/24 my-docker-net
 ### 2.指定容器网络并设置固定ip
 
 ```sh
-docker run -d   --net=my-docker-net --ip=172.0.0.3 --name=[容器名字] -v [镜像名字]
+docker run -d   --net=my-docker-net --ip=172.0.0.3 --name=[容器名字] [镜像名字]
 ```
 
 `--net` 指定网络  
