@@ -1,7 +1,8 @@
 ---
 title: 🐿mysql按照正则匹配,进行批量删除数据表
 date: 2023-08-02
-tags: mysql
+tags: 
+  - mysql
 ---
 有时候遇到批量删除很多数据表的时候，一个一个去删除太麻烦。使用如下sql可以根据则匹配,进行批量删除数据表！
 
@@ -30,6 +31,7 @@ DEALLOCATE PREPARE stmt;
 此脚本将首先使用 SHOW TABLES 语句和 REGEXP 运算符来获取匹配正则表达式模式的表名。然后，它将使用 DROP TABLE 语句生成一个包含所有匹配表名的脚本，并使用 EXECUTE 执行删除操作！
 
 **如果想确保万无一失的话，可以使用下面sql进行与生成drop语句预览以便再次确认！**
+
 ```sql
 SELECT REPLACE(GROUP_CONCAT('DROP TABLE IF EXISTS `', TABLE_NAME, '`;'), ';,', ';')
 FROM information_schema.tables
