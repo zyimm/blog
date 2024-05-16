@@ -20,6 +20,7 @@ Ubuntu的desktop文件相当于windows的桌面软件快捷方式，可以在任
 ```sh
 /usr/share/applications
 ```
+<!--more-->
 
 > `.desktop`桌面文件的一些常见配置项：
 
@@ -34,4 +35,4 @@ Ubuntu的desktop文件相当于windows的桌面软件快捷方式，可以在任
 
 **示例参考:**
 
-[启动图标创建示例-https://www.zyimm.com/2022/11/05/Linux/ubuntu/charles-install]
+[启动图标创建示例-https://www.zyimm.com/2022/11/05/Linux/ubuntu/charles-install](https://www.zyimm.com/2022/11/05/Linux/ubuntu/charles-install)
