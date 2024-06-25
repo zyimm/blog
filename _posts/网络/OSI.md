@@ -7,13 +7,13 @@ tags:
 
 本文原文来源于如下文章，我对一些有疑问章节做了删除和补充。
 
- [https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82](https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82) 
+ [https://everfind.github.io/courses/network/osi-model.html](https://everfind.github.io/courses/network/osi-model.html)
 
  OSI 模型(Open System Interconnection Model)全称为开放系统互连模型，是一种由七个层次组成的计算机网络通信模型。
 
  ![alt text](https://everfind.github.io/courses/network/osi-c.png)
 
- 以下是从低层到高层逐一介绍。
+ 以下是从低层到高层逐一介绍:
 
  <!--more-->
 
@@ -78,11 +78,9 @@ IP 头和数据将会被进一步的封装在 MAC 地址头中，这个地址头
 
 在已经连接到网络中的计算机上，同一时间可能同时运行着浏览器、音乐播放器、即时通讯系统比如微信等。每一个应用都是从网络上读写数据。
 
-
 在网络层中，有两种协议，TCP 协议（Transmission Control Protocol）和 UDP 协议（User Datagram Protocol）。
 
 TCP 和 UDP 都有 65536 个端口可供使用。每个应用数据流的 IP 报文中都含有源节点和目标节点的端口号。
-
 
 总而言之，如果数据链路层负责逐跳传输数据，网络层负责端到端传输数据，那么传输层则是负责服务到服务的传输数据。
 
