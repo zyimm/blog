@@ -1,5 +1,5 @@
 ---
-title: OSI 参考模型
+title: 🪟OSI 参考模型
 date: 2024-06-22
 tags: 
     - network
