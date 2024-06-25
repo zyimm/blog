@@ -5,7 +5,9 @@ tags:
     - network
 ---
 
-本文原文来源于 [https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82](https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82) 对一些有疑问章节做了删除和补充。
+本文原文来源于如下文章，我对一些有疑问章节做了删除和补充。
+
+ [https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82](https://everfind.github.io/courses/network/osi-model.html#%E7%AC%AC%E4%B8%80%E5%B1%82-%E7%89%A9%E7%90%86%E5%B1%82) 
 
  OSI 模型(Open System Interconnection Model)全称为开放系统互连模型，是一种由七个层次组成的计算机网络通信模型。
 
