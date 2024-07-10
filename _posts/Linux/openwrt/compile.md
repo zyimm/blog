@@ -10,7 +10,7 @@ tags:
 ## OpenWrt根目录镜像小
 
 编译完的img镜像只有160M，不方便后期安装更多软件，解决如下：
-
+ <!--more-->
 1. 在编译的时候设置根目录空间大小
 2. 首先选择Target Images选项
 ![](https://pic.idzd.top/usr/uploads/2020/08/07/966871589148201.jpg)
