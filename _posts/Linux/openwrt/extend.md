@@ -7,7 +7,7 @@ tags:
 
 **相关插件如下：**
 > 注：应用后面标记 “ * ” 为最近新添加；标记“ ! ”与其他插件依赖或冲突
-
+ <!--more-->
 ```sh
 LuCI ---> Applications ---> luci-app-accesscontrol  #访问时间控制
 LuCI ---> Applications ---> luci-app-acme  #ACME自动化证书管理环境（丢弃）
