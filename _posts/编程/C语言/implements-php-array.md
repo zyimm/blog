@@ -7,77 +7,102 @@ tags:
 
 语言实现类似php的array数据类型！
 
+<!--more-->
 ```c
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+//元素类型
+typedef enum elementTypes { String, Inter } elementType;
+
+// 定义动态数组元素结构体
+typedef struct {
+    void *data;
+    elementType type;
+} Element;
+
+
 // 定义动态数组结构体
 typedef struct {
-    void** data;    // 数据
-    int size;       // 大小
-    int capacity;   // 容量
+    Element **data; // 数据
+    size_t size; // 大小
+    size_t capacity; // 容量
 } Array;
 
 // 初始化动态数组
-void initArray(Array* arr, int capacity) {
-    arr->data = (void**)malloc(capacity * sizeof(void*));
+void init_array(Array *arr, int capacity) {
+    arr->data = (Element **) malloc(capacity * sizeof(Element *));
     arr->size = 0;
     arr->capacity = capacity;
 }
 
+
+
 // 释放动态数组
-void freeArray(Array* arr) {
+void free_array(Array *arr) {
     free(arr->data);
     arr->size = 0;
     arr->capacity = 0;
 }
 
 // 向动态数组中添加一个元素
-void push(Array* arr, void* element) {
+void push(Array *arr, Element *element) {
     if (arr->size == arr->capacity) {
         arr->capacity *= 2;
-        arr->data = (void**)realloc(arr->data, arr->capacity * sizeof(void*));
+        arr->data = (Element **) realloc(arr->data, arr->capacity * sizeof(Element *));
     }
     arr->data[arr->size++] = element;
 }
-<!--more-->
+
+
 // 从动态数组中删除一个元素
-void removeElement(Array* arr, int index) {
-    if (index < 0 || index >= arr->size) {
-        return;
-    }
+void remove_element(Array *arr, size_t index) {
+    assert(index < arr->size); // 确保索引有效
     arr->size--;
-    for (int i = index; i < arr->size; i++) {
-        arr->data[i] = arr->data[i + 1];
-    }
+    memmove(&arr->data[index], &arr->data[index + 1], (arr->size - index) * sizeof(Element *));
 }
 
+
 // 根据索引从动态数组中获取一个元素
-void* get(Array* arr, int index) {
-    if (index < 0 || index >= arr->size) {
-        return NULL;
-    }
+Element *get(Array *arr, size_t index) {
+    assert(index < arr->size); // 确保索引有效
     return arr->data[index];
+}
+
+void  print_array(Array arr) {
+    for (int i = 0; i < arr.size; i++) {
+        Element *el = get(&arr, i);
+        switch (el->type) {
+            case String:
+                printf("%s ", (char *) el->data);
+                break;
+            case Inter:
+                printf("%d ", *(int *) el->data);
+                break;
+            default:
+                printf("Unknown Type\n");
+        }
+    }
 }
 
 int main() {
     Array arr;
-    initArray(&arr, 10);
-    int a = 10, b = 20, c = 30;
-    push(&arr, &a);
-    push(&arr, &b);
-    push(&arr, &c);
-    for (int i = 0; i < arr.size; i++) {
-        printf("%d ", *((int*)get(&arr, i)));
-    }
+    init_array(&arr, 10);
+    push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
+    *((int *)arr.data[0]->data) = 10;
+    push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
+    *((int *)arr.data[1]->data) = 20;
+    push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
+    *((int *)arr.data[2]->data) = 30;
+    push(&arr, &(Element){.data = strdup("zyimm"), .type = String});
+    print_array(arr);
     printf("\n");
-    removeElement(&arr, 1);
-    for (int i = 0; i < arr.size; i++) {
-        printf("%d ", *((int*)get(&arr, i)));
-    }
+    remove_element(&arr, 0);
+    print_array(arr);
     printf("\n");
-    freeArray(&arr);
+    free_array(&arr);
     return 0;
 }
 
