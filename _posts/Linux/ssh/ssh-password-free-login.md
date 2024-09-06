@@ -21,7 +21,7 @@ SSH 密钥登录分为以下的步骤。
 
 **校验过程时序图**
 
-![25dd3fc40a001c3002872d39865e4baa](http://api.img.zyimm.com/media/20231227/25dd3fc40a001c3002872d39865e4baa.png)
+![25dd3fc40a001c3002872d39865e4baa](https://www.zyimm.com/images/media/20231227/25dd3fc40a001c3002872d39865e4baa.png)
 
 <!--more-->
 ## 生成公/私密钥
