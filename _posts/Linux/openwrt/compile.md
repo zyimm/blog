@@ -13,12 +13,12 @@ tags:
  <!--more-->
 1. 在编译的时候设置根目录空间大小
 2. 首先选择Target Images选项
-![](https://pic.idzd.top/usr/uploads/2020/08/07/966871589148201.jpg)
+![da48017961c1e756b12302941530c3cb](https://www.zyimm.com/images/media/20240906/da48017961c1e756b12302941530c3cb.jpg)
 
 - 先勾选上ext4选项
 - 然后`在Root filesystem partition size (in MB)`选项，调整根目录空间大小（MB）
 
-![](https://pic.idzd.top/usr/uploads/2020/08/07/966873485697310.jpg)
+![a9340335271eb70e31c5c5215e62d68a](https://www.zyimm.com/images/media/20240906/a9340335271eb70e31c5c5215e62d68a.jpg)
 
 3. 关于ext4与squashfs两种固件镜像文件系统格式：
     3.1 squashfs格式的固件，支持在面板内恢复初始状态；ext4格式的固件则不可以；

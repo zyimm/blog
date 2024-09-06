@@ -11,7 +11,7 @@ tags:
 
  OSI 模型(Open System Interconnection Model)全称为开放系统互连模型，是一种由七个层次组成的计算机网络通信模型。
 
- ![alt text](https://everfind.github.io/courses/network/osi-c.png)
+![21180baeab201fe3a1e437796e9570b9](https://www.zyimm.com/images/media/20240906/21180baeab201fe3a1e437796e9570b9.png)
 
  以下是从低层到高层逐一介绍:
 
@@ -68,7 +68,7 @@ tags:
 
 IP 头和数据将会被进一步的封装在 MAC 地址头中，这个地址头同时还封装了当前跳和下一跳的 MAC 地址。
 
-![](https://everfind.github.io/courses/network/l2-vs-l3-c.gif)
+![47f7c697d3b2ff48d6ff49daca4fedd7](https://www.zyimm.com/images/media/20240906/47f7c697d3b2ff48d6ff49daca4fedd7.gif)
 
 注意，在每个路由器之间，MAC 地址头都被解开，然后在发往下一跳的时候重新封装。IP 头只会在最终目的节点被解开。也就是说 IP 负责端到端的数据传输，而 MAC 负责逐跳传输数据。
 
