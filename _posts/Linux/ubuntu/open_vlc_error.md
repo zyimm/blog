@@ -1,5 +1,5 @@
 ---
-title: 🧌 ubuntu无法打开vlc,Qt: Session management error: Could not open network socket 错误
+title: 🧌 ubuntu无法打开vlc,`Qt:Session management error: Could not open network socket`错误
 date: 2024-10-07
 tags: 
     - Ubuntu
