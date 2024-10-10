@@ -20,7 +20,7 @@ WHERE
     AND ROUTINE_SCHEMA = 'your_database_name'; # your_database_name 替换成实际数据库名称
 ```
 <!--more-->
-看一下DEFINER的值，是否再目前数据库用户当中，根据实际情况进行如下1或2解决：
+看一下DEFINER的值，是否在当前数据库用户当中，根据实际情况进行如下1或2解决：
 
 ## 1. 创建缺失的用户
 
