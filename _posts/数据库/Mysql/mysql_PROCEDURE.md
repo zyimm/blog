@@ -5,7 +5,7 @@ tags:
   - mysql
 ---
 
-MySQL 错误 1449 通常表示 "The user specified as a definer ('user'@'host') does not exist"。出现这个错误的原因是mysql在尝试执行某个存储过程、函数或视图时，定义者（definer）指定的用户不存在于数据库中。
+MySQL 错误 1449 通常表示 `The user specified as a definer ('user'@'host') does not exist`。出现这个错误的原因是mysql在尝试执行某个存储过程、函数或视图时，定义者（definer）指定的用户不存在于数据库中。
 
 首先先查看一下，目前数据库中存储过程有哪些定义者，sql如下：
 
