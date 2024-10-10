@@ -47,7 +47,7 @@ GRANT ALL PRIVILEGES ON my_database.my_table TO 'user'@'host';
 FLUSH PRIVILEGES; 
 ```
 
-### 2. 修改定义者的身份
+## 2. 修改定义者的身份
 
 修改存储过程、函数或视图的定义者为一个存在的用户。
 
