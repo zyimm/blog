@@ -14,7 +14,7 @@ tags:
 1. 打开终端，输入命令`upower --enumerate`
 2. 复制打印的电池路径（通常以 结尾_BAT0），比如我的电池路径是`/org/freedesktop/UPower/devices/battery_BATT`
 3. 输入upower -i 并粘贴2中的电池设备路径
-
+<!--more-->
 执行结果如下图:
 
 ![[alt text](image.png)](https://www.zyimm.com/images/media/20241101/a9f8daad150af13472ac49174a1601e0.png)
