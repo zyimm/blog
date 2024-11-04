@@ -19,7 +19,7 @@ tags:
 
 ![[alt text](image.png)](https://www.zyimm.com/images/media/20241101/a9f8daad150af13472ac49174a1601e0.png)
 
-一些重要参数解释：
+> [!TIP]一些重要参数解释：
 
 - `energy-full`：电池现在可冲进去的最大容量
 - `energy-full-design`：电池的出厂设计最大的容量
