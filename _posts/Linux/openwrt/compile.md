@@ -7,7 +7,7 @@ tags:
 
 在ubuntu 24.04上编译openwrt时，出现一些问题，记录一下。
 
-## OpenWrt根目录镜像小
+## 1.OpenWrt根目录镜像小
 
 编译完的img镜像只有160M，不方便后期安装更多软件，解决如下：
  <!--more-->
@@ -24,7 +24,7 @@ tags:
     3.1 squashfs格式的固件，支持在面板内恢复初始状态；ext4格式的固件则不可以；
     3.2 ext4格式的固件可以灵活调整分区大小；squashfs格式的固件则不可以；
 
-## libncurses缺失 解决如下
+## 2.libncurses缺失 解决如下
 
 在新的ubuntu 24.04仓库中目前已经没有libncurses这个软件包了，所以需要手动下载安装包
 
@@ -36,7 +36,7 @@ wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.4-2_
 sudo apt install lib32ncurses5-dev libncurses5 libncurses5-dev -y 
 ```
 
-## make defconfig 有什么作用?
+## 3.make defconfig 有什么作用?
 
 `make defconfig` 用于只提供 `.config` 部分代码片段的默认值补全，也就是用`.config`代码片段  **defconfig** 出完整的`.config`用于编译。简单理解就是不存在的配置项自动补全默认，存在则不更新。常常如下组合使用：
 
@@ -67,7 +67,6 @@ make -j$(nproc) V=s
 
 ```sh
 opkg  update
-
 opkg install luci-app-ttyd
 ```
 
