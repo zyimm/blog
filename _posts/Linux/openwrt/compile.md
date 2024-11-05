@@ -55,13 +55,13 @@ make download -j$(nproc)
 make -j$(nproc) V=s
 ```
 
-## docker 编译
+## 4.docker 编译
 
 进入“Utilities” 选择你需要的容器工具，比如“docker”。
 
 <https://dachunlv.com/2022/03/12/linux/operation/OpenWrt%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/>
 
-## 安装dockerman
+## 5.安装dockerman
 
 1. 安装luci-app-ttyd 依赖
 
