@@ -1,5 +1,5 @@
 ---
-title: 🧑‍🚒ubuntu上编译openwrt的若干问题提记录
+title: 🧑‍🚒ubuntu上编译openwrt的若干问题记录
 date: 2024-07-06
 tags: 
     - openwrt
