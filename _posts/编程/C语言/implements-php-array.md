@@ -89,13 +89,18 @@ void  print_array(Array arr) {
 
 int main() {
     Array arr;
+    //初始化数组
     init_array(&arr, 10);
+    //插入int 类型的元素
     push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
     *((int *)arr.data[0]->data) = 10;
+     //插入int 类型的元素
     push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
     *((int *)arr.data[1]->data) = 20;
+     //插入int 类型的元素
     push(&arr, &(Element){.data = malloc(sizeof(int)), .type = Inter});
     *((int *)arr.data[2]->data) = 30;
+     //插入string类型的元素
     push(&arr, &(Element){.data = strdup("zyimm"), .type = String});
     print_array(arr);
     printf("\n");
