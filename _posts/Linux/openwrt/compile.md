@@ -73,3 +73,10 @@ opkg install luci-app-ttyd
 2. 安装对应ipk
 
 <https://github.com/lisaac/luci-app-dockerman/releases>
+
+
+## 6.qemu虚拟运行openwrt使用宿主机网络
+
+修改 `/etc/config/network` 中  `config interface 'lan'` 为dhcp即可！具体如图所示！
+
+![c5440a139d44094422f6706765f4422b](https://www.zyimm.com/images/media/20250327/c5440a139d44094422f6706765f4422b.png)
