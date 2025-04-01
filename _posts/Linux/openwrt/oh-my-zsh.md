@@ -14,7 +14,7 @@ openwrt24.10安装oh-my-zsh遇到一些问题记录如下：
 opkg update
 ```
 
-## 2. 安装Zsh
+## 2. 安装Zsh和oh-my-zsh
 
 ```sh
 opkg install zsh
