@@ -29,7 +29,8 @@ wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -
 # 或者
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-#可能出现的错误“git: 'remote-https' is not a git command. See 'git --help'.” 需要移除默认git使用git-http替代
+# 可能出现的错误“git: 'remote-https' is not a git command. See 'git --help'.” 
+# 需要移除默认git使用git-http替代
 
 opkg remove git
 opkg install git-http
