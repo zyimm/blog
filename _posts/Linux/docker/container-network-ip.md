@@ -1,7 +1,8 @@
 ---
 title: 🫡Docker运行一个容器并固定IP
 date: 2023-8-07
-tags: Docker
+tags: 
+  - Docker
 ---
 
 一些特殊部署场景下，需要指定某个容器ip以便于访问。可以使用Docker的网络模式来间接地控制容器的IP地址，所以这边记录一下分别在单独docker与docker-compose配置示例！☘
