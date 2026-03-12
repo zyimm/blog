@@ -15,7 +15,7 @@ Run Main is_gpu=0 is_zygote=0 is_render=0 is_crashpad_handler=0 cmd : ./com.alib
 Load /opt/apps/com.alibabainc.dingtalk/files/8.1.0-Release.6021101//dingtalk_dll.so failed! Err=/opt/apps/com.alibabainc.dingtalk/files/8.1.0-Release.6021101//dingtalk_dll.so: cannot enable executable stack as shared object requires: Invalid argument
  ```
 
-> 主要解决两个问题一个是libgbm.so 不存在，二是dingtalk_dll.so 无法启用可执行栈
+> 主要解决两个问题一个是libgbm.so 不存在，二是dingtalk_dll.so 无法启用可执行栈。
 
 ## 1.libgbm.so 不存在
 
