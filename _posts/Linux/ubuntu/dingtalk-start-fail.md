@@ -47,7 +47,7 @@ libgbm.so (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libgbm.so
 
 导致该错误可能的原因：
 
-1. 某些旧版或非标准编译的 .so 文件（如钉钉的 dingtalk_dll.so）可能标记了需要 可执行栈（executable stack）。
+1. 某些旧版或非标准编译的 .so 文件（如钉钉的 dingtalk_dll.so）可能标记了需要可执行栈（executable stack）。
 2. 但现代 Linux 系统出于安全考虑（NX/DEP 保护），默认禁止共享库使用可执行栈。
 3. 如果内核或安全策略（如 SELinux、PaX、grsecurity 或某些国产 OS 的加固策略）严格限制，就会报 Invalid argument。
 
