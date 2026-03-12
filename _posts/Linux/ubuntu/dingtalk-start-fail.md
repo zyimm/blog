@@ -39,7 +39,7 @@ libgbm.so (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libgbm.so
 
 ```
 
-/usr/lib/x86_64-linux-gnu/libgbm.so 文件路径修改钉钉启动文件上(/opt/apps/com.alibabainc.dingtalk/files/Elevator.sh)中`preload_libs=`路径修改成`/usr/lib/x86_64-linux-gnu/libgbm.so`
+`/usr/lib/x86_64-linux-gnu/libgbm.so` 文件路径修改钉钉启动文件上(`/opt/apps/com.alibabainc.dingtalk/files/Elevator.sh`)中`preload_libs=`路径修改成`/usr/lib/x86_64-linux-gnu/libgbm.so`
 
 
 
