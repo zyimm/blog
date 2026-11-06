@@ -53,6 +53,14 @@ toc: false
       <p>云服务商真实评价与用户投票评分平台</p>
     </div>
   </a>
+
+  <a href="https://we.dog/" target="_blank" class="link-card">
+    <img class="link-avatar" src="https://we.dog/assets/images/logo.jpg">
+    <div class="link-info">
+      <h3>舔狗日记</h3>
+      <p>网友自嘲写成随机段子的舔狗日记，刷一篇笑一次，还能一键复制发群。</p>
+    </div>
+  </a>
 </div>
 
 > 互换友链请在评论区留言：站点名、网址、头像链接、站点简介
