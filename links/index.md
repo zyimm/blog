@@ -61,6 +61,14 @@ toc: false
       <p>网友自嘲写成随机段子的舔狗日记，刷一篇笑一次，还能一键复制发群。</p>
     </div>
   </a>
+
+  <a href="https://zh.ifixit.com/" target="_blank" class="link-card">
+    <img class="link-avatar" src="https://assets.cdn.ifixit.com/static/icons/ifixit/apple-touch-icon-57x57.png">
+    <div class="link-info">
+      <h3>iFixit：免费修理手册</h3>
+      <p>iFixit 是一个以维修为主题的全球性互助社区。从一个一个的设备开始，让我们来一步一个脚印一点一点的修复这个世界。你可以在问题解答论坛和专家一起互动——还可以创建并与全世界分享由你编篡的维修手册。</p>
+    </div>
+  </a>
 </div>
 
 > 互换友链请在评论区留言：站点名、网址、头像链接、站点简介
